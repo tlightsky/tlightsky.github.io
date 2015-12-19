@@ -11,7 +11,7 @@ categories: redux immutable react router
 
 这次使用React，希望继续基于之前的redux+immutable来做，所以打算整理一个基础的Bootstrap方便以后类似项目启动
 
-，这次的Project打算使用的技术大概有以下几个：
+这次的Project打算使用的技术大概有以下几个：
 
 - ### 主要依赖库
   - react
@@ -27,7 +27,7 @@ categories: redux immutable react router
   - mocha
   - uglify-loader
 
-
+[项目链接][项目链接](整理中)
 
 
 [WeUI]:         https://github.com/weui/weui
@@ -35,3 +35,4 @@ categories: redux immutable react router
 [PR]:           https://github.com/weui/react-weui/issues/3
 [babel]:        https://github.com/babel/babel/blob/master/doc/design/monorepo.md
 [redux-router]: https://www.npmjs.com/package/redux-router
+[项目链接]:       https://github.com/tlightsky/immutable-redux-bootstrap
