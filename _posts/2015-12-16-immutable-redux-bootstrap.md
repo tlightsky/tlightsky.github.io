@@ -28,7 +28,7 @@ categories: redux immutable react router
   - mocha
   - uglify-loader
 
-[项目链接][项目链接](整理中)
+[项目链接][项目链接]
 
 
 [WeUI]:         https://github.com/weui/weui
