@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "如何思考未来的事情"
-date:   2015-1-13 11:23:57
+date:   2016-1-13 11:23:57
 categories: learn lixiaolai think
 ---
 
