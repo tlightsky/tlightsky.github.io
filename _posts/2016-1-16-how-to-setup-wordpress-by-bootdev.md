@@ -25,7 +25,7 @@ web:
 
 3. 下载并解压wordpress文件，并命名为app目录
 
-{% highlight lang-bash %}
+{% highlight bash %}
 wget http://wordpress.org/latest.zip
 unzip latest.zip
 mv wordpress app
