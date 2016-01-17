@@ -46,7 +46,7 @@ ftp:
 2. 在ftp目录中，运行`docker-compose up -d`
 3. 运行命令`docker exec -it ftp_ftp_1 bash`
 4. 建立用户：
-{% highlight shell %}
+{% highlight lang-bash %}
 pure-pw useradd code -u ftpuser -d /home/ftpusers/code
 pure-pw mkdb
 {% endhighlight %}
