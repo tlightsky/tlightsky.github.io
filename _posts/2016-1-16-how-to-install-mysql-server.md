@@ -13,12 +13,12 @@ categories: wordpress mysql linux
 
 1. 修改`/etc/mysql/my.cnf`，注释掉`bind-address            = 127.0.0.1`，然后重启mysql
 
-2. 添加一个root的远程账户，代码如下
+2. 添加一个root的远程账户，代码如下：
 
-```
+{% highlight bash %}
 mysql -u root -p
 
 use mysql;
 update user set host='%' where user='root';
 flush privileges;
-```
+{% endhighlight %}

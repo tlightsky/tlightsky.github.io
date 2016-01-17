@@ -54,14 +54,14 @@ categories: influence zhihu cheat
 不过，之前不了解不代表不可以学习。
 正确的概念越多，正确的选择就会越多。
 而正确的选择，会导致正确的行为。
-在这里安利下李笑来老师的公众号：[学习学习再学习](learn)。
+在这里安利下李笑来老师的公众号：[学习学习再学习][学习学习再学习]。
 可以学习到很多。
 
 
 ps：最近开始写文章，有种学了公式在做应用题的感觉，说不上好还是不好，自警，自勉
 
 
-参考：[影响力](influence)
+参考：[影响力][影响力]
 
-[influence]: http://www.amazon.cn/%E5%BD%B1%E5%93%8D%E5%8A%9B-%E7%BD%97%E4%BC%AF%E7%89%B9%E2%80%A2B%E2%80%A2%E8%A5%BF%E5%A5%A5%E8%BF%AA%E5%B0%BC/dp/B0044KME2E/ref=sr_1_1?ie=UTF8&qid=1452952123&sr=8-1&keywords=%E5%BD%B1%E5%93%8D%E5%8A%9B#nav-belt
-[learn]: https://mp.weixin.qq.com/s?__biz=MzAxNzI4MTMwMw==&mid=401232868&idx=1&sn=409a658e2642422cc2151fb02997add4&scene=1&srcid=0117isf8tYMT6JB8KBFOymYN&key=41ecb04b05111003d9c98517e5ad20f70e962b198601df3fee86260d7028b155ebaee2ad129503fbf52c2be4d2fb1b3b&ascene=0&uin=MTI4ODE0NQ%3D%3D&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.10.5+build(14F1021)&version=11020201&pass_ticket=CbbBwiPCafJSvT6wo0H5MyL5H7Gz46V25h5XSAIDF9Y%3D
+[影响力]: http://book.douban.com/subject/1786387/
+[学习学习再学习]: https://mp.weixin.qq.com/s?__biz=MzAxNzI4MTMwMw==&mid=401232868&idx=1&sn=409a658e2642422cc2151fb02997add4&scene=1&srcid=0117isf8tYMT6JB8KBFOymYN&key=41ecb04b05111003d9c98517e5ad20f70e962b198601df3fee86260d7028b155ebaee2ad129503fbf52c2be4d2fb1b3b&ascene=0&uin=MTI4ODE0NQ%3D%3D&devicetype=iMac+MacBookPro10%2C1+OSX+OSX+10.10.5+build(14F1021)&version=11020201&pass_ticket=CbbBwiPCafJSvT6wo0H5MyL5H7Gz46V25h5XSAIDF9Y%3D
