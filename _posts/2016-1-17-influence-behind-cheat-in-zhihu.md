@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "知乎「童瑶」事件，背后的影响力原理"
+title:  "知乎「童瑶」事件背后的影响力原理"
 date:   2016-1-17 09:51:02
 categories: influence zhihu cheat
 ---
