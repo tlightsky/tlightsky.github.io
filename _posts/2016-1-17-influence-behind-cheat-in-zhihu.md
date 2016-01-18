@@ -61,9 +61,6 @@ categories: influence zhihu cheat
 可以学习到很多有用的概念。
 
 
-ps：最近开始写文章，有种学了公式在做应用题的感觉，说不上好还是不好，自警，自勉
-
-
 参考：[影响力][影响力]
 
 [影响力]: http://book.douban.com/subject/1786387/
