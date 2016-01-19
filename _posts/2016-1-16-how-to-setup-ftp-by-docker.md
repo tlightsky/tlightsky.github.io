@@ -7,10 +7,13 @@ categories: ftp docker pure-ftp
 
 本篇讲述如何使用docker快速搭建ftp服务器。
 
-前置条件：
+### 前置条件：
 
 * [安装docker](http://tlightsky.github.io/docker/2016/01/16/how-to-install-docker.html)
 * [安装docker-compose](http://tlightsky.github.io/docker/docker-compose/python/pip/2016/01/16/how-to-install-docker-compose.html)
+
+
+### 搭建方法：
 
 使用[stilliard/pure-ftpd](stilliard/pure-ftpd)，这个ftp docker image。
 步骤如下：

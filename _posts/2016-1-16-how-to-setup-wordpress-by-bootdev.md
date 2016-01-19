@@ -5,13 +5,14 @@ date:   2016-1-16 4:23:57
 categories: wordpress bootdev
 ---
 
-预置条件：
+### 预置条件：
 
 * [数据库搭建](http://tlightsky.github.io/wordpress/mysql/linux/2016/01/16/how-to-install-mysql-server.html)
 * [安装docker](http://tlightsky.github.io/docker/2016/01/16/how-to-install-docker.html)
 * [安装docker-compose](http://tlightsky.github.io/docker/docker-compose/python/pip/2016/01/16/how-to-install-docker-compose.html)
 
-正文：
+
+### 搭建方法：
 
 
 * 将bootdev的[phpfpm][phpfpm]项目clone到本地
