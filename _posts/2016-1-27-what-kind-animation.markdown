@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "我们需要什么样的动画"
-date:   2015-1-27 09:51:02
+date:   2016-1-27 09:51:02
 categories: animation react
 ---
 
