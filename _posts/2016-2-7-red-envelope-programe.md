@@ -2,7 +2,7 @@
 layout: post
 title:  "抽奖发红包的逻辑怎么整"
 date:   2016-2-7 09:51:02
-categories: red-envelope lottery
+categories: red envelope lottery
 ---
 
 新年到，在这春节之际，偶还在编写抽红包的应用。
