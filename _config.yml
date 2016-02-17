@@ -10,3 +10,5 @@ github_username:  tlightsky
 
 # Build settings
 markdown: kramdown
+
+future: true
