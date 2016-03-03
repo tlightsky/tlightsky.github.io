@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "通用抽奖"
+title:  "通用抽奖函数的一些想法"
 date:   2016-2-17 00:00:00
 categories: lottery
 ---

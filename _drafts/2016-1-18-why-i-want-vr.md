@@ -31,5 +31,6 @@ categories: vr
 
 在上海的朋友，可以Email联系我体验，地址在下方。
 
+332682654@qq.com
 
 [流体验]: https://en.wikipedia.org/wiki/Flow_(psychology)
