@@ -6,7 +6,7 @@ categories: frontend points
 ---
 
 
-##position的值， relative和absolute分别是相对于谁进行定位的？
+## position的值， relative和absolute分别是相对于谁进行定位的？
 
 
 - `absolute` :生成绝对定位的元素， 相对于最近一级的 定位不是 static 的父元素来进行定位。
@@ -19,7 +19,7 @@ categories: frontend points
 
 <br>
 
-##谈谈你会webpack的看法
+## 谈谈你会webpack的看法
 
 
 
