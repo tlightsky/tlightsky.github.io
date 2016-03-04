@@ -149,296 +149,296 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
     栈（数据结构）：一种先进后出的数据结构。
 
-    ###ES6的了解
+###ES6的了解
 
-    新增模板字符串（为JavaScript提供了简单的字符串插值功能）、箭头函数（操作符左边为输入的参数，而右边则是进行的操作以及返回的值`Inputs=>outputs`。）、`for-of`（用来遍历数据—例如数组中的值。）`arguments`对象可被不定参数和默认参数完美代替。`ES6`将`promise`对象纳入规范，提供了原生的`Promise`对象。增加了`let`和`const`命令，用来声明变量。增加了块级作用域。let命令实际上就增加了块级作用域。ES6规定，`var`命令和`function`命令声明的全局变量，属于全局对象的属性；`let`命令、`const`命令、`class`命令声明的全局变量，不属于全局对象的属性。。还有就是引入`module`模块的概念
+新增模板字符串（为JavaScript提供了简单的字符串插值功能）、箭头函数（操作符左边为输入的参数，而右边则是进行的操作以及返回的值`Inputs=>outputs`。）、`for-of`（用来遍历数据—例如数组中的值。）`arguments`对象可被不定参数和默认参数完美代替。`ES6`将`promise`对象纳入规范，提供了原生的`Promise`对象。增加了`let`和`const`命令，用来声明变量。增加了块级作用域。let命令实际上就增加了块级作用域。ES6规定，`var`命令和`function`命令声明的全局变量，属于全局对象的属性；`let`命令、`const`命令、`class`命令声明的全局变量，不属于全局对象的属性。。还有就是引入`module`模块的概念
 
 
 
-    ###js继承方式及其优缺点
+###js继承方式及其优缺点
 
 
 
-    >原型链继承的缺点
+>原型链继承的缺点
 
 
-        一是字面量重写原型会中断关系，使用引用类型的原型，并且子类型还无法给超类型传递参数。
+    一是字面量重写原型会中断关系，使用引用类型的原型，并且子类型还无法给超类型传递参数。
 
 
-    >借用构造函数（类式继承）
+>借用构造函数（类式继承）
 
 
 
-        借用构造函数虽然解决了刚才两种问题，但没有原型，则复用无从谈起。所以我们需要原型链+借用构造函数的模式，这种模式称为组合继承
+    借用构造函数虽然解决了刚才两种问题，但没有原型，则复用无从谈起。所以我们需要原型链+借用构造函数的模式，这种模式称为组合继承
 
 
 
-    >组合式继承
+>组合式继承
 
 
 
-        组合式继承是比较常用的一种继承方法，其背后的思路是 使用原型链实现对原型属性和方法的继承，而通过借用构造函数来实现对实例属性的继承。这样，既通过在原型上定义方法实现了函数复用，又保证每个实例都有它自己的属性。
+    组合式继承是比较常用的一种继承方法，其背后的思路是 使用原型链实现对原型属性和方法的继承，而通过借用构造函数来实现对实例属性的继承。这样，既通过在原型上定义方法实现了函数复用，又保证每个实例都有它自己的属性。
 
-    具体请看：[JavaScript继承方式详解](http://segmentfault.com/a/1190000002440502)
+具体请看：[JavaScript继承方式详解](http://segmentfault.com/a/1190000002440502)
 
 
 
-    ###谈谈浮动和清除浮动
+###谈谈浮动和清除浮动
 
-    浮动的框可以向左或向右移动，直到他的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流的块框表现得就像浮动框不存在一样。浮动的块框会漂浮在文档普通流的块框上。
+浮动的框可以向左或向右移动，直到他的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流的块框表现得就像浮动框不存在一样。浮动的块框会漂浮在文档普通流的块框上。
 
 
 
-    ###如何评价AngularJS和BackboneJS
+###如何评价AngularJS和BackboneJS
 
-    `backbone`具有依赖性，依赖`underscore.js`。`Backbone + Underscore + jQuery(or Zepto)` 就比一个`AngularJS` 多出了2 次HTTP请求.
+`backbone`具有依赖性，依赖`underscore.js`。`Backbone + Underscore + jQuery(or Zepto)` 就比一个`AngularJS` 多出了2 次HTTP请求.
 
-    <br>
+<br>
 
-    `Backbone`的`Model`没有与UI视图数据绑定，而是需要在View中自行操作DOM来更新或读取UI数据。`AngularJS`与此相反，Model直接与UI视图绑定，`Model`与UI视图的关系，通过`directive`封装，`AngularJS`内置的通用`directive`，就能实现大部分操作了，也就是说，基本不必关心`Model`与UI视图的关系，直接操作Model就行了，UI视图自动更新。
+`Backbone`的`Model`没有与UI视图数据绑定，而是需要在View中自行操作DOM来更新或读取UI数据。`AngularJS`与此相反，Model直接与UI视图绑定，`Model`与UI视图的关系，通过`directive`封装，`AngularJS`内置的通用`directive`，就能实现大部分操作了，也就是说，基本不必关心`Model`与UI视图的关系，直接操作Model就行了，UI视图自动更新。
 
-    <br>
+<br>
 
-    `AngularJS`的`directive`，你输入特定数据，他就能输出相应UI视图。是一个比较完善的前端MVW框架，包含模板，数据双向绑定，路由，模块化，服务，依赖注入等所有功能，模板功能强大丰富，并且是声明式的，自带了丰富的 Angular 指令。
+`AngularJS`的`directive`，你输入特定数据，他就能输出相应UI视图。是一个比较完善的前端MVW框架，包含模板，数据双向绑定，路由，模块化，服务，依赖注入等所有功能，模板功能强大丰富，并且是声明式的，自带了丰富的 Angular 指令。
 
 
 
-    ##说说你对闭包的理解
+##说说你对闭包的理解
 
 
 
-    使用闭包主要是为了设计私有的方法和变量。闭包的优点是可以避免全局变量的污染，缺点是闭包会常驻内存，会增大内存使用量，使用不当很容易造成内存泄露。
+使用闭包主要是为了设计私有的方法和变量。闭包的优点是可以避免全局变量的污染，缺点是闭包会常驻内存，会增大内存使用量，使用不当很容易造成内存泄露。
 
 
-    闭包有三个特性：
+闭包有三个特性：
 
-    >1.函数嵌套函数
+>1.函数嵌套函数
 
-    >2.函数内部可以引用外部的参数和变量
+>2.函数内部可以引用外部的参数和变量
 
-    >3.参数和变量不会被垃圾回收机制回收
+>3.参数和变量不会被垃圾回收机制回收
 
-     具体请看：[详解js闭包](http://segmentfault.com/a/1190000000652891)
+ 具体请看：[详解js闭包](http://segmentfault.com/a/1190000000652891)
 
 
-     ##CSS 相关问题
+ ##CSS 相关问题
 
 
 
-     >`display:none`和`visibility:hidden`的区别？
+ >`display:none`和`visibility:hidden`的区别？
 
 
-         display:none  隐藏对应的元素，在文档布局中不再给它分配空间，它各边的元素会合拢，就当他从来不存在。
+     display:none  隐藏对应的元素，在文档布局中不再给它分配空间，它各边的元素会合拢，就当他从来不存在。
 
-         visibility:hidden  隐藏对应的元素，但是在文档布局中仍保留原来的空间。
+     visibility:hidden  隐藏对应的元素，但是在文档布局中仍保留原来的空间。
 
 
 
-     >CSS中` link` 和`@import `的区别是？
+ >CSS中` link` 和`@import `的区别是？
 
-         (1) link属于HTML标签，而@import是CSS提供的;
+     (1) link属于HTML标签，而@import是CSS提供的;
 
-         (2) 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+     (2) 页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
 
-         (3) import只在IE5以上才能识别，而link是HTML标签，无兼容问题;
+     (3) import只在IE5以上才能识别，而link是HTML标签，无兼容问题;
 
-         (4) link方式的样式的权重 高于@import的权重.
+     (4) link方式的样式的权重 高于@import的权重.
 
 
 
-     >`position:absolute`和`float`属性的异同
+ >`position:absolute`和`float`属性的异同
 
 
 
-     - 共同点：对内联元素设置`float`和`absolute`属性，可以让元素脱离文档流，并且可以设置其宽高。
+ - 共同点：对内联元素设置`float`和`absolute`属性，可以让元素脱离文档流，并且可以设置其宽高。
 
 
-     - 不同点：`float`仍会占据位置，`position`会覆盖文档流中的其他元素。
+ - 不同点：`float`仍会占据位置，`position`会覆盖文档流中的其他元素。
 
 
 
-     >介绍一下box-sizing属性？
+ >介绍一下box-sizing属性？
 
 
-     `box-sizing`属性主要用来控制元素的盒模型的解析模式。默认值是`content-box`。
+ `box-sizing`属性主要用来控制元素的盒模型的解析模式。默认值是`content-box`。
 
 
-     - `content-box`：让元素维持W3C的标准盒模型。元素的宽度/高度由`border + padding + content`的宽度/高度决定，设置`width/height`属性指的是`content`部分的宽/高
+ - `content-box`：让元素维持W3C的标准盒模型。元素的宽度/高度由`border + padding + content`的宽度/高度决定，设置`width/height`属性指的是`content`部分的宽/高
 
-     - `border-box`：让元素维持IE传统盒模型（IE6以下版本和IE6~7的怪异模式）。设置`width/height`属性指的是`border + padding + content`
+ - `border-box`：让元素维持IE传统盒模型（IE6以下版本和IE6~7的怪异模式）。设置`width/height`属性指的是`border + padding + content`
 
 
 
-     标准浏览器下，按照W3C规范对盒模型解析，一旦修改了元素的边框或内距，就会影响元素的盒子尺寸，就不得不重新计算元素的盒子尺寸，从而影响整个页面的布局。
+ 标准浏览器下，按照W3C规范对盒模型解析，一旦修改了元素的边框或内距，就会影响元素的盒子尺寸，就不得不重新计算元素的盒子尺寸，从而影响整个页面的布局。
 
-     >CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
+ >CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
 
-     ```css
-         1.id选择器（ # myid）
+ ```css
+     1.id选择器（ # myid）
 
-         2.类选择器（.myclassname）
+     2.类选择器（.myclassname）
 
-         3.标签选择器（div, h1, p）
+     3.标签选择器（div, h1, p）
 
-         4.相邻选择器（h1 + p）
+     4.相邻选择器（h1 + p）
 
-         5.子选择器（ul > li）
+     5.子选择器（ul > li）
 
-         6.后代选择器（li a）
+     6.后代选择器（li a）
 
-         7.通配符选择器（ * ）
+     7.通配符选择器（ * ）
 
-         8.属性选择器（a[rel = "external"]）
+     8.属性选择器（a[rel = "external"]）
 
-         9.伪类选择器（a: hover, li:nth-child）
-     ```
+     9.伪类选择器（a: hover, li:nth-child）
+ ```
 
 
-     **优先级为:**
+ **优先级为:**
 
 
-     `!important >  id > class > tag `
+ `!important >  id > class > tag `
 
-     `important` 比 内联优先级高,但内联比 `id` 要高
+ `important` 比 内联优先级高,但内联比 `id` 要高
 
 
 
-     >CSS3新增伪类举例：
+ >CSS3新增伪类举例：
 
-     ```css
-         p:first-of-type 选择属于其父元素的首个 <p> 元素的每个 <p> 元素。
+ ```css
+     p:first-of-type 选择属于其父元素的首个 <p> 元素的每个 <p> 元素。
 
-         p:last-of-type  选择属于其父元素的最后 <p> 元素的每个 <p> 元素。
+     p:last-of-type  选择属于其父元素的最后 <p> 元素的每个 <p> 元素。
 
-         p:only-of-type  选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。
+     p:only-of-type  选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。
 
-         p:only-child    选择属于其父元素的唯一子元素的每个 <p> 元素。
+     p:only-child    选择属于其父元素的唯一子元素的每个 <p> 元素。
 
-         p:nth-child(2)  选择属于其父元素的第二个子元素的每个 <p> 元素。
+     p:nth-child(2)  选择属于其父元素的第二个子元素的每个 <p> 元素。
 
-         :enabled  :disabled 控制表单控件的禁用状态。
+     :enabled  :disabled 控制表单控件的禁用状态。
 
-         :checked        单选框或复选框被选中。
-     ```
+     :checked        单选框或复选框被选中。
+ ```
 
-     >CSS3有哪些新特性？
+ >CSS3有哪些新特性？
 
-         CSS3实现圆角（border-radius），阴影（box-shadow），
+     CSS3实现圆角（border-radius），阴影（box-shadow），
 
-         对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）
+     对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）
 
-         transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜
+     transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜
 
-         增加了更多的CSS选择器  多背景 rgba
+     增加了更多的CSS选择器  多背景 rgba
 
-         在CSS3中唯一引入的伪元素是::selection.
+     在CSS3中唯一引入的伪元素是::selection.
 
-         媒体查询，多栏布局
+     媒体查询，多栏布局
 
-         border-image
+     border-image
 
-     CSS3中新增了一种盒模型计算方式：`box-sizing`。盒模型默认的值是`content-box`, 新增的值是`padding-box`和`border-box`，几种盒模型计算元素宽高的区别如下：
+ CSS3中新增了一种盒模型计算方式：`box-sizing`。盒模型默认的值是`content-box`, 新增的值是`padding-box`和`border-box`，几种盒模型计算元素宽高的区别如下：
 
-     #### `content-box（默认）`
+ #### `content-box（默认）`
 
-     布局所占宽度Width：
+ 布局所占宽度Width：
 
-     ```css
-     Width = width + padding-left + padding-right + border-left + border-right
+ ```css
+ Width = width + padding-left + padding-right + border-left + border-right
 
-     ```
+ ```
 
-     布局所占高度Height:
+ 布局所占高度Height:
 
-     ```css
-     Height = height + padding-top + padding-bottom + border-top + border-bottom
+ ```css
+ Height = height + padding-top + padding-bottom + border-top + border-bottom
 
-     padding-box
-     ```
+ padding-box
+ ```
 
-     布局所占宽度Width：
+ 布局所占宽度Width：
 
-     ```css
-     Width = width(包含padding-left + padding-right) + border-top + border-bottom
+ ```css
+ Width = width(包含padding-left + padding-right) + border-top + border-bottom
 
-     ```
+ ```
 
-     布局所占高度Height:
+ 布局所占高度Height:
 
-     ```css
-     Height = height(包含padding-top + padding-bottom) + border-top + border-bottom
+ ```css
+ Height = height(包含padding-top + padding-bottom) + border-top + border-bottom
 
-     border-box
-     ```
+ border-box
+ ```
 
-     布局所占宽度Width：
+ 布局所占宽度Width：
 
-     ```css
-     Width = width(包含padding-left + padding-right + border-left + border-right)
-     ```
+ ```css
+ Width = width(包含padding-left + padding-right + border-left + border-right)
+ ```
 
-     布局所占高度Height:
+ 布局所占高度Height:
 
-     ```css
-     Height = height(包含padding-top + padding-bottom + border-top + border-bottom)
-     ```
+ ```css
+ Height = height(包含padding-top + padding-bottom + border-top + border-bottom)
+ ```
 
-     >对BFC规范的理解？
+ >对BFC规范的理解？
 
-               BFC，块级格式化上下文，一个创建了新的BFC的盒子是独立布局的，盒子里面的子元素的样式不会影响到外面的元素。在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
+           BFC，块级格式化上下文，一个创建了新的BFC的盒子是独立布局的，盒子里面的子元素的样式不会影响到外面的元素。在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
 
-             （W3C CSS 2.1 规范中的一个概念，它决定了元素如何对其内容进行布局，以及与其他元素的关系和相互作用。）
+         （W3C CSS 2.1 规范中的一个概念，它决定了元素如何对其内容进行布局，以及与其他元素的关系和相互作用。）
 
 
-             ###常见兼容性问题？
+         ###常见兼容性问题？
 
 
-                 png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.也可以引用一段脚本处理.
+             png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.也可以引用一段脚本处理.
 
-                 浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。
+             浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。
 
-                 IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。
+             IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。
 
-                 浮动ie产生的双倍距离（IE6双边距问题：在IE6下，如果对元素设置了浮动，同时又设置了margin-left或margin-right，margin值会加倍。）
+             浮动ie产生的双倍距离（IE6双边距问题：在IE6下，如果对元素设置了浮动，同时又设置了margin-left或margin-right，margin值会加倍。）
 
-                 #box{ float:left; width:10px; margin:0 0 0 100px;}
+             #box{ float:left; width:10px; margin:0 0 0 100px;}
 
-                 这种情况之下IE会产生20px的距离，解决方案是在float的标签样式控制中加入
-                 _display:inline; 将其转化为行内属性。(_这个符号只有ie6会识别)
+             这种情况之下IE会产生20px的距离，解决方案是在float的标签样式控制中加入
+             _display:inline; 将其转化为行内属性。(_这个符号只有ie6会识别)
 
-                 渐进识别的方式，从总体中逐渐排除局部。
+             渐进识别的方式，从总体中逐渐排除局部。
 
 
-                   首先，巧妙的使用“\9”这一标记，将IE游览器从所有情况中分离出来。
+               首先，巧妙的使用“\9”这一标记，将IE游览器从所有情况中分离出来。
 
-                   接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。
+               接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。
 
-                   css
+               css
 
-                       .bb{
+                   .bb{
 
-                        background-color:#f1ee18;/*所有识别*/
+                    background-color:#f1ee18;/*所有识别*/
 
-                       .background-color:#00deff\9; /*IE6、7、8识别*/
+                   .background-color:#00deff\9; /*IE6、7、8识别*/
 
-                       +background-color:#a200ff;/*IE6、7识别*/
+                   +background-color:#a200ff;/*IE6、7识别*/
 
-                       _background-color:#1e0bd1;/*IE6识别*/
+                   _background-color:#1e0bd1;/*IE6识别*/
 
-                       }
+                   }
 
 
-                 怪异模式问题：漏写DTD声明，Firefox仍然会按照标准模式来解析网页，但在IE中会触发
-                 怪异模式。为避免怪异模式给我们带来不必要的麻烦，最好养成书写DTD声明的好习惯。现在
-                 可以使用[html5](http://www.w3.org/TR/html5/single-page.html)推荐的写法：`<doctype html>`
+             怪异模式问题：漏写DTD声明，Firefox仍然会按照标准模式来解析网页，但在IE中会触发
+             怪异模式。为避免怪异模式给我们带来不必要的麻烦，最好养成书写DTD声明的好习惯。现在
+             可以使用[html5](http://www.w3.org/TR/html5/single-page.html)推荐的写法：`<doctype html>`
 
 
 
-             >上下margin重合问题
+         >上下margin重合问题
 
-                 ie和ff都存在，相邻的两个div的margin-left和margin-right不会重合，但是margin-top和margin-bottom却会发生重合。
+             ie和ff都存在，相邻的两个div的margin-left和margin-right不会重合，但是margin-top和margin-bottom却会发生重合。
 
-                 解决方法，养成良好的代码编写习惯，同时采用margin-top或者同时采用margin-bottom。
+             解决方法，养成良好的代码编写习惯，同时采用margin-top或者同时采用margin-bottom。
 
 
  ###解释下浮动和它的工作原理？清除浮动的技巧
