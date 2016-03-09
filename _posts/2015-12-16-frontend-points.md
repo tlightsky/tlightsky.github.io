@@ -303,7 +303,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
  >CSS3新增伪类举例：
 
- ```css
+ ```
      p:first-of-type 选择属于其父元素的首个 <p> 元素的每个 <p> 元素。
 
      p:last-of-type  选择属于其父元素的最后 <p> 元素的每个 <p> 元素。
@@ -341,14 +341,14 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
  布局所占宽度Width：
 
- ```css
+ ```
  Width = width + padding-left + padding-right + border-left + border-right
 
  ```
 
  布局所占高度Height:
 
- ```css
+ ```
  Height = height + padding-top + padding-bottom + border-top + border-bottom
 
  padding-box
@@ -356,14 +356,14 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
  布局所占宽度Width：
 
- ```css
+ ```
  Width = width(包含padding-left + padding-right) + border-top + border-bottom
 
  ```
 
  布局所占高度Height:
 
- ```css
+ ```
  Height = height(包含padding-top + padding-bottom) + border-top + border-bottom
 
  border-box
@@ -371,13 +371,13 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
  布局所占宽度Width：
 
- ```css
+ ```
  Width = width(包含padding-left + padding-right + border-left + border-right)
  ```
 
  布局所占高度Height:
 
- ```css
+ ```
  Height = height(包含padding-top + padding-bottom + border-top + border-bottom)
  ```
 
@@ -477,7 +477,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
  使用`CSS`中的`clear:both`;属性来清除元素的浮动可解决2、3问题，对于问题1，添加如下样式，给父元素添加`clearfix`样式：
 
- ```css
+ ```
      .clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
 
      .clearfix{display: inline-block;} /* for IE/Mac */
@@ -486,7 +486,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
  **清除浮动的几种方法：**
 
 
- ```css
+ ```
      1，额外标签法，<div style="clear:both;"></div>（缺点：不过这个办法会增加额外的标签使HTML结构看起来不够简洁。）
 
      2，使用after伪类
