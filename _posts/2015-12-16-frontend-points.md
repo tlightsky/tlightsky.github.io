@@ -337,49 +337,47 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
  CSS3中新增了一种盒模型计算方式：`box-sizing`。盒模型默认的值是`content-box`, 新增的值是`padding-box`和`border-box`，几种盒模型计算元素宽高的区别如下：
 
- #### `content-box（默认）`
+ #### content-box（默认）
 
  布局所占宽度Width：
 
- ```
+ {% highlight javascript %}
  Width = width + padding-left + padding-right + border-left + border-right
-
- ```
+ {% endhighlight %}
 
  布局所占高度Height:
 
- ```
+ {% highlight javascript %}
  Height = height + padding-top + padding-bottom + border-top + border-bottom
 
  padding-box
- ```
+ {% endhighlight %}
 
  布局所占宽度Width：
 
- ```
+ {% highlight javascript %}
  Width = width(包含padding-left + padding-right) + border-top + border-bottom
-
- ```
+ {% endhighlight %}
 
  布局所占高度Height:
 
- ```
+ {% highlight javascript %}
  Height = height(包含padding-top + padding-bottom) + border-top + border-bottom
 
  border-box
- ```
+ {% endhighlight %}
 
  布局所占宽度Width：
 
- ```
+ {% highlight javascript %}
  Width = width(包含padding-left + padding-right + border-left + border-right)
- ```
+ {% endhighlight %}
 
  布局所占高度Height:
 
- ```
+ {% highlight javascript %}
  Height = height(包含padding-top + padding-bottom + border-top + border-bottom)
- ```
+ {% endhighlight %}
 
  >对BFC规范的理解？
 
