@@ -38,7 +38,7 @@ categories: frontend points
 
     2.loader 可以处理各种类型的静态文件，并且支持串联操作
 
-###webpack的优势：
+### webpack的优势：
 
 
 
@@ -72,7 +72,7 @@ categories: frontend points
 8.webpack 使用异步 IO 并具有多级缓存。这使得 webpack 很快且在增量编译上更加快
 ```
 
-####XSS原理及防范
+#### XSS原理及防范
 
 Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `html`标签或者`javascript`代码。比如：攻击者在论坛中放一个
 
@@ -82,7 +82,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
 
 
-####XSS防范方法
+#### XSS防范方法
 
 首先代码里对用户输入的地方和变量都需要仔细检查长度和对`”<”,”>”,”;”,”’”`等字符做过滤；其次任何内容写到页面之前都必须加以`encode`，避免不小心把`html tag` 弄出来。这一个层面做好，至少可以堵住超过一半的`XSS` 攻击。
 
@@ -98,7 +98,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 尽量采用`POST` 而非`GET` 提交表单
 
 
-###HTTP和HTTPS
+### HTTP和HTTPS
 
 
 
@@ -110,11 +110,11 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
 
 
-###为什么`HTTPS`安全
+### 为什么`HTTPS`安全
 
 因为网络请求需要中间有很多的服务器路由器的转发。中间的节点都可能篡改信息，而如果使用`HTTPS`，密钥在你和终点站才有。`https`之所以比`http`安全，是因为他利用`ssl/tls`协议传输。它包含证书，卸载，流量转发，负载均衡，页面适配，浏览器适配，refer传递等。保障了传输过程的安全性
 
-###什么是Etag？
+### 什么是Etag？
 
 
 当发送一个服务器请求时，浏览器首先会进行缓存过期判断。浏览器根据缓存过期时间判断缓存文件是否过期。<br>
@@ -137,7 +137,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 ① 只有get请求会被缓存，post请求不会
 
 
-###栈和堆的区别？
+### 栈和堆的区别？
 
 
 
@@ -149,13 +149,13 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
     栈（数据结构）：一种先进后出的数据结构。
 
-###ES6的了解
+### ES6的了解
 
 新增模板字符串（为JavaScript提供了简单的字符串插值功能）、箭头函数（操作符左边为输入的参数，而右边则是进行的操作以及返回的值`Inputs=>outputs`。）、`for-of`（用来遍历数据—例如数组中的值。）`arguments`对象可被不定参数和默认参数完美代替。`ES6`将`promise`对象纳入规范，提供了原生的`Promise`对象。增加了`let`和`const`命令，用来声明变量。增加了块级作用域。let命令实际上就增加了块级作用域。ES6规定，`var`命令和`function`命令声明的全局变量，属于全局对象的属性；`let`命令、`const`命令、`class`命令声明的全局变量，不属于全局对象的属性。。还有就是引入`module`模块的概念
 
 
 
-###js继承方式及其优缺点
+### js继承方式及其优缺点
 
 
 
@@ -183,13 +183,13 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
 
 
-###谈谈浮动和清除浮动
+### 谈谈浮动和清除浮动
 
 浮动的框可以向左或向右移动，直到他的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流的块框表现得就像浮动框不存在一样。浮动的块框会漂浮在文档普通流的块框上。
 
 
 
-###如何评价AngularJS和BackboneJS
+### 如何评价AngularJS和BackboneJS
 
 `backbone`具有依赖性，依赖`underscore.js`。`Backbone + Underscore + jQuery(or Zepto)` 就比一个`AngularJS` 多出了2 次HTTP请求.
 
@@ -203,7 +203,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
 
 
-##说说你对闭包的理解
+## 说说你对闭包的理解
 
 
 
