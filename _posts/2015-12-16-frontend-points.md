@@ -221,7 +221,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
  具体请看：[详解js闭包](http://segmentfault.com/a/1190000000652891)
 
 
- ##CSS 相关问题
+## CSS 相关问题
 
 
 
@@ -234,7 +234,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
 
 
- >CSS中` link` 和`@import `的区别是？
+ >CSS中 `link` 和 `@import` 的区别是？
 
      (1) link属于HTML标签，而@import是CSS提供的;
 
@@ -273,7 +273,6 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
  >CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？
 
- ```css
      1.id选择器（ # myid）
 
      2.类选择器（.myclassname）
@@ -291,7 +290,6 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
      8.属性选择器（a[rel = "external"]）
 
      9.伪类选择器（a: hover, li:nth-child）
- ```
 
 
  **优先级为:**
