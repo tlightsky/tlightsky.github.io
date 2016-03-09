@@ -381,84 +381,84 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
  >对BFC规范的理解？
 
-           BFC，块级格式化上下文，一个创建了新的BFC的盒子是独立布局的，盒子里面的子元素的样式不会影响到外面的元素。在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
+       BFC，块级格式化上下文，一个创建了新的BFC的盒子是独立布局的，盒子里面的子元素的样式不会影响到外面的元素。在同一个BFC中的两个毗邻的块级盒在垂直方向（和布局方向有关系）的margin会发生折叠。
 
-         （W3C CSS 2.1 规范中的一个概念，它决定了元素如何对其内容进行布局，以及与其他元素的关系和相互作用。）
-
-
-         ###常见兼容性问题？
+     （W3C CSS 2.1 规范中的一个概念，它决定了元素如何对其内容进行布局，以及与其他元素的关系和相互作用。）
 
 
-             png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.也可以引用一段脚本处理.
-
-             浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。
-
-             IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。
-
-             浮动ie产生的双倍距离（IE6双边距问题：在IE6下，如果对元素设置了浮动，同时又设置了margin-left或margin-right，margin值会加倍。）
-
-             #box{ float:left; width:10px; margin:0 0 0 100px;}
-
-             这种情况之下IE会产生20px的距离，解决方案是在float的标签样式控制中加入
-             _display:inline; 将其转化为行内属性。(_这个符号只有ie6会识别)
-
-             渐进识别的方式，从总体中逐渐排除局部。
+### 常见兼容性问题？
 
 
-               首先，巧妙的使用“\9”这一标记，将IE游览器从所有情况中分离出来。
+   png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.也可以引用一段脚本处理.
 
-               接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。
+   浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。
 
-               css
+   IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。
 
-                   .bb{
+   浮动ie产生的双倍距离（IE6双边距问题：在IE6下，如果对元素设置了浮动，同时又设置了margin-left或margin-right，margin值会加倍。）
 
-                    background-color:#f1ee18;/*所有识别*/
+   #box{ float:left; width:10px; margin:0 0 0 100px;}
 
-                   .background-color:#00deff\9; /*IE6、7、8识别*/
+   这种情况之下IE会产生20px的距离，解决方案是在float的标签样式控制中加入
+   _display:inline; 将其转化为行内属性。(_这个符号只有ie6会识别)
 
-                   +background-color:#a200ff;/*IE6、7识别*/
-
-                   _background-color:#1e0bd1;/*IE6识别*/
-
-                   }
+   渐进识别的方式，从总体中逐渐排除局部。
 
 
-             怪异模式问题：漏写DTD声明，Firefox仍然会按照标准模式来解析网页，但在IE中会触发
-             怪异模式。为避免怪异模式给我们带来不必要的麻烦，最好养成书写DTD声明的好习惯。现在
-             可以使用[html5](http://www.w3.org/TR/html5/single-page.html)推荐的写法：`<doctype html>`
+     首先，巧妙的使用“\9”这一标记，将IE游览器从所有情况中分离出来。
+
+     接着，再次使用“+”将IE8和IE7、IE6分离开来，这样IE8已经独立识别。
+
+     css
+
+         .bb{
+
+          background-color:#f1ee18;/*所有识别*/
+
+         .background-color:#00deff\9; /*IE6、7、8识别*/
+
+         +background-color:#a200ff;/*IE6、7识别*/
+
+         _background-color:#1e0bd1;/*IE6识别*/
+
+         }
 
 
-
-         >上下margin重合问题
-
-             ie和ff都存在，相邻的两个div的margin-left和margin-right不会重合，但是margin-top和margin-bottom却会发生重合。
-
-             解决方法，养成良好的代码编写习惯，同时采用margin-top或者同时采用margin-bottom。
-
-
- ###解释下浮动和它的工作原理？清除浮动的技巧
+   怪异模式问题：漏写DTD声明，Firefox仍然会按照标准模式来解析网页，但在IE中会触发
+   怪异模式。为避免怪异模式给我们带来不必要的麻烦，最好养成书写DTD声明的好习惯。现在
+   可以使用[html5](http://www.w3.org/TR/html5/single-page.html)推荐的写法：`<doctype html>`
 
 
 
-     浮动元素脱离文档流，不占据空间。浮动元素碰到包含它的边框或者浮动元素的边框停留。
+>上下margin重合问题
+
+   ie和ff都存在，相邻的两个div的margin-left和margin-right不会重合，但是margin-top和margin-bottom却会发生重合。
+
+   解决方法，养成良好的代码编写习惯，同时采用margin-top或者同时采用margin-bottom。
 
 
-     1.使用空标签清除浮动。
-
-        这种方法是在所有浮动标签后面添加一个空标签 定义css clear:both. 弊端就是增加了无意义标签。
-
-     2.使用overflow。
-
-        给包含浮动元素的父标签添加css属性 overflow:auto; zoom:1; zoom:1用于兼容IE6。
-
-     3.使用after伪对象清除浮动。
-
-        该方法只适用于非IE浏览器。具体写法可参照以下示例。使用中需注意以下几点。一、该方法中必须为需要清除浮动元素的伪对象中设置 height:0，否则该元素会比实际高出若干像素；
+### 解释下浮动和它的工作原理？清除浮动的技巧
 
 
 
- ###浮动元素引起的问题和解决办法？
+   浮动元素脱离文档流，不占据空间。浮动元素碰到包含它的边框或者浮动元素的边框停留。
+
+
+   1.使用空标签清除浮动。
+
+      这种方法是在所有浮动标签后面添加一个空标签 定义css clear:both. 弊端就是增加了无意义标签。
+
+   2.使用overflow。
+
+      给包含浮动元素的父标签添加css属性 overflow:auto; zoom:1; zoom:1用于兼容IE6。
+
+   3.使用after伪对象清除浮动。
+
+      该方法只适用于非IE浏览器。具体写法可参照以下示例。使用中需注意以下几点。一、该方法中必须为需要清除浮动元素的伪对象中设置 height:0，否则该元素会比实际高出若干像素；
+
+
+
+ ### 浮动元素引起的问题和解决办法？
 
 
      浮动元素引起的问题：
@@ -475,19 +475,18 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
 
  使用`CSS`中的`clear:both`;属性来清除元素的浮动可解决2、3问题，对于问题1，添加如下样式，给父元素添加`clearfix`样式：
 
- ```
+{% highlight javascript %}
      .clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
 
      .clearfix{display: inline-block;} /* for IE/Mac */
- ```
+{% endhighlight %}
 
  **清除浮动的几种方法：**
 
 
- ```
-     1，额外标签法，<div style="clear:both;"></div>（缺点：不过这个办法会增加额外的标签使HTML结构看起来不够简洁。）
+     1. 额外标签法，<div style="clear:both;"></div>（缺点：不过这个办法会增加额外的标签使HTML结构看起来不够简洁。）
 
-     2，使用after伪类
+     2. 使用after伪类
 
      #parent:after{
 
@@ -504,14 +503,13 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
          }
 
 
-     3,浮动外部元素
+     3. 浮动外部元素
 
-     4,设置overflow为hidden或者auto
- ```
+     4. 设置overflow为hidden或者auto
 
- ###js对象的深度克隆
+### js对象的深度克隆
 
- ```js
+ {% highlight javascript %}
        function clone(Obj) {
 
              var buf;
@@ -549,9 +547,9 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
              }
 
          }
- ```
+ {% endhighlight %}
 
- ###说说你对Promise的理解
+ ### 说说你对Promise的理解
 
 
 
@@ -584,7 +582,7 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
  构造一个 `Promise`，最基本的用法如下：
 
 
- ```js
+  {% highlight javascript %}
  	var promise = new Promise(function(resolve, reject) {
 
  	    if (...) {  // succeed
@@ -598,13 +596,13 @@ Xss(cross-site scripting)攻击指的是攻击者往Web页面里插入恶意 `ht
  	    }
 
  	});
- ```
+  {% endhighlight %}
 
 
  `Promise` 实例拥有 `then` 方法（具有 `then` 方法的对象，通常被称为 `thenable`）。它的使用方法如下：
 
- ```js
+ {% highlight javascript %}
  promise.then(onFulfilled, onRejected)
- ```
+ {% endhighlight %}
 
  接收两个函数作为参数，一个在 `fulfilled` 的时候被调用，一个在 `rejected` 的时候被调用，接收参数就是 `future，onFulfilled` 对应 `resolve`, `onRejected` 对应 `reject`。
