@@ -11,9 +11,9 @@ categories: wordpress mysql linux
 
 如果需要从非本地访问数据库，需要做一些修改：
 
-1. 修改`/etc/mysql/my.cnf`，注释掉`bind-address            = 127.0.0.1`，然后重启mysql
+* 修改`/etc/mysql/my.cnf`，注释掉`bind-address            = 127.0.0.1`，然后重启mysql
 
-2. 添加一个root的远程账户，代码如下：
+* 添加一个root的远程账户，代码如下：
 
 {% highlight bash %}
 mysql -u root -p
@@ -25,14 +25,14 @@ flush privileges;
 {% endhighlight %}
 
 
-3. 备份mysql
+* 备份mysql
 
 {% highlight bash %}
 mysql dump -uroot -p dbname > name.sql
 {% endhighlight %}
 
 
-4. 导入mysql
+* 导入mysql
 
 {% highlight bash %}
 mysql -uroot -p dbname < name.sql
