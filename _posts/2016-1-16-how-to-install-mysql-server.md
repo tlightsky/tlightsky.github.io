@@ -20,5 +20,6 @@ mysql -u root -p
 
 use mysql;
 update user set host='%' where user='root';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
 flush privileges;
 {% endhighlight %}
