@@ -23,3 +23,15 @@ update user set host='%' where user='root';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
 flush privileges;
 {% endhighlight %}
+
+3. 备份mysql
+
+{% highlight bash %}
+mysql dump -uroot -p dbname > name.sql
+{% endhighlight %}
+
+4. 导入mysql
+
+{% highlight bash %}
+mysql -uroot -p dbname < name.sql
+{% endhighlight %}
