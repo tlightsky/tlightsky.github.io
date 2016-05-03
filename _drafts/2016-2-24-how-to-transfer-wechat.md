@@ -19,7 +19,7 @@ categories: wechat transfer
 ## 服务器端
 
 * 创建app，填写微信相关的信息
-* 获取到token填写到公众号内
+* 获取token填写到公众号内
 * 修改微信端服务器url，token
 * 微信端添加js安全域名
 * 微信端添加
