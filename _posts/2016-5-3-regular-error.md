@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一个一年左右的错误"
+title:  "一个一年左右的正则表达式错误"
 date:   2016-5-3 09:51:02
 categories: regular expression error
 ---
