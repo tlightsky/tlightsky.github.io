@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "cocos2d-x的自适应布局系统"
-date:   2016-5-4 09:51:02
+date:   2016-5-10 09:51:02
 categories: cocox2d-x layout widget
 ---
 
