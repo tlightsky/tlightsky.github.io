@@ -12,7 +12,7 @@ categories: laravel controller
 
 ## 排序，(sort-by keyfn list)
 
-{% highlight clojurescript %}
+{% highlight clojure %}
 (defonce keyfy-re #".*_(\d+)\.jpg")
 
 (defn keyfy [s]
