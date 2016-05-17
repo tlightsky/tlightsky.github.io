@@ -20,6 +20,31 @@ categories: laravel controller
     (js/parseInt s)))
 ```
 
+## 合并多个bmp文件
+
+```
+(defn frame-path [i]
+  (let [prefix (str droot sep "tmp" sep "screen" sep)]
+    (str prefix "frame" i ".bmp")))
+
+(defn join-bmp [bmps]
+  (let [bmp-datas (map #(->> % (.readFileSync fs) (.decode bmp)) bmps)
+        bmp-datas (js->clj bmp-datas)
+        _ (debug :json "join-bmp" ((-> bmp-datas first) "width"))
+        one-bmp (reduce
+                 (fn [x y]
+                   {"data" (.concat js/Buffer (clj->js [(x "data") (y "data")]))
+                    "width" (x "width")
+                    "height" (+ (x "height") (y "height"))}) bmp-datas)
+        one-bmp-data (->> one-bmp clj->js (.encode bmp))
+        one-bmp-data (.-data one-bmp-data)
+;;         _ (debug :json "join-bmp" one-bmp-data)
+        one-bmp-path (first bmps)
+        _ (.writeFileSync fs one-bmp-path one-bmp-data)]
+    [one-bmp-path]))
+```
+
+
 PS: 昨天干了一个很蠢的事，在调研清楚功能之前先选用库进行调试。
 做了一些无用功，这点需要自省，在做之前掌握所有信息。
 对所有观点进行压力测试，找最聪明的人反驳自己，以接近真实。
