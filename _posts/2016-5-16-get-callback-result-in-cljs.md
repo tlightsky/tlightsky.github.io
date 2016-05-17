@@ -12,14 +12,13 @@ categories: laravel controller
 
 ## 排序，(sort-by keyfn list)
 
-{% highlight shell %}
+```
 (defonce keyfy-re #".*_(\d+)\.jpg")
 
 (defn keyfy [s]
   (let [s (second (re-find keyfy-re s))]
     (js/parseInt s)))
-
-{% highlight %}
+```
 
 PS: 昨天干了一个很蠢的事，在调研清楚功能之前先选用库进行调试。
 做了一些无用功，这点需要自省，在做之前掌握所有信息。
