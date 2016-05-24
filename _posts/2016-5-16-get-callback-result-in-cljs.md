@@ -44,6 +44,15 @@ categories: laravel controller
     [one-bmp-path]))
 ```
 
+## jstr->clj-origin
+之前在jstr->clj里做了处理，可以都以 :key
+但是这个处理有bug，不能做多层级处理
+不能很好的处理数组
+所以要用origin来处理这些情况
+那在用origin时就是能以这种形式来获取内容了：
+```
+(obj "key")
+```
 
 PS: 昨天干了一个很蠢的事，在调研清楚功能之前先选用库进行调试。
 做了一些无用功，这点需要自省，在做之前掌握所有信息。
