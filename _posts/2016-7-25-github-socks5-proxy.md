@@ -24,3 +24,7 @@ Host github github.com
 {% highlight yml %}
 nc -x127.0.0.1:1082 -X5 $*
 {% endhighlight %}
+
+{% highlight yml %}
+chmod +x /usr/local/bin/proxy-wrapper
+{% endhighlight %}
