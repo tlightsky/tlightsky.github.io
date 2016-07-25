@@ -9,7 +9,7 @@ categories: github socke5 proxy
 
 前置条件：本地1082端口有sokcs5代理
 
-修改 /etc/ssh_config
+修改 /etc/ssh/ssh_config
 
 {% highlight yml %}
 Host github github.com
