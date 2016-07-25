@@ -7,6 +7,8 @@ categories: github socke5 proxy
 
 #github 代理
 
+前置条件：本地1082端口有sokcs5代理
+
 修改 /etc/ssh_config
 
 {% highlight yml %}
