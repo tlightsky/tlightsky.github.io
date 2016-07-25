@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "ustc debian source"
-date:   2016-7-22 09:51:02
-categories: ustc debian source
+title:  "github socks5 proxy"
+date:   2016-7-25 09:51:02
+categories: github socke5 proxy
 ---
 
 #github 代理
