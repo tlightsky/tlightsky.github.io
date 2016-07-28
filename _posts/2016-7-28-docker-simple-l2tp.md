@@ -16,8 +16,8 @@ l2tp:
    - "4500:4500/udp"
    - "1701:1701/tcp"
   environment:
-   - PSK=gg
-   - USERS=wc:wc
+   - PSK=my-pre-shared-key
+   - USERS=my-username:my-password
   cap_add:
   - NET_ADMIN
   restart: always
