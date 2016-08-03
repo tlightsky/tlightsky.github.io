@@ -37,3 +37,9 @@ mysql dump -uroot -p dbname > name.sql
 {% highlight bash %}
 mysql -uroot -p dbname < name.sql
 {% endhighlight %}
+
+* 修密码
+
+{% highlight bash %}
+update user set password=password('123') where user='root' and host='localhost';
+{% endhighlight %}

@@ -15,9 +15,15 @@ categories: docker
 
 Log into Ubuntu as a user with sudo privileges.
 This procedure assumes you log in as the ubuntu user.
+{% highlight bash %}
 Create the docker group.
+
 $ sudo groupadd docker
+
 Add your user to docker group.
+
 $ sudo usermod -aG docker ubuntu
+{% endhighlight %}
+
 Log out and log back in.
 This ensures your user is running with the correct permissions.
