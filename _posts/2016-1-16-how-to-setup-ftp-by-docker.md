@@ -43,6 +43,7 @@ ftp:
     PUBLICHOST: localhost
 {% endhighlight %}
 
+* 新建app文件夹，并`chmod 777 app`
 * 在ftp目录中，运行`docker-compose up -d`
 * 运行命令`docker exec -it ftp_ftp_1 bash`，进入docker容器内部
 * 建立用户：
