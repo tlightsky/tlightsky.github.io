@@ -33,3 +33,20 @@ ps: 转换视角之情，一直在潜意识里觉得，非常宽广又非常压�
 所以，先创造个封闭空间喽，可以在里面发射好看的粒子的那种哦。
 
 然后呢，可以用code结合music创造一个Infinite的空间喽，可以fly的那种哦。
+
+
+## 粒子系统
+
+### Particl
+
+### Cascade
+Unreal的粒子编辑器
+
+#### Emiter
+Cascade中的每个粒子发射节点
+
+#### module
+每个粒子发射节点上的属性
+
+#### special module
+决定Emiter类型的module
