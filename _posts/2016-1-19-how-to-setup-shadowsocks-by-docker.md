@@ -28,7 +28,7 @@ vim conf/shadowsocks.json
  "server_port":8388,
  "password":"MyPowerfulPassword",
  "timeout":300,
- "method":"table"
+ "method":"aes-256-cfb"
 }
 ```
 
@@ -38,7 +38,6 @@ vim conf/shadowsocks.json
 ssp:
   build: .
   ports:
-   - "443:1984"
    - "8388:8388"
   volumes:
    - ./conf:/etc/shadowsocks

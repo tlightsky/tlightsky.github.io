@@ -19,7 +19,7 @@ any:
    - "443:443/tcp"
   privileged: true
   volumes:
-   - ./ocserv-docker/ocserv:/etc/ocserv
+   - ./ocserv:/etc/ocserv
   restart: always
 {% endhighlight %}
 
