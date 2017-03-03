@@ -38,3 +38,17 @@ categories: unreal
 #### GameState contains the state of the game, which could include things like the list of connected players, the score
 
 -------------------------
+
+#### Unreal Motion Graphics (UMG)
+
+UMG = lots of widgets
+Unreal Motion Graphics UI Designer (UMG) is a visual UI authoring tool which can be used to create UI elements such as in-game HUDs, menus or other interface related graphics you wish to present to your users. At the core of UMG are Widgets, which are a series of pre-made functions that can be used to construct your interface (things like buttons, checkboxes, sliders, progress bars, etc.). These Widgets are edited in a specialized Widget Blueprint, which uses two tabs for construction: the Designer tab allows for the visual layout of the interface and basic functions while the Graph tab provides the functionality behind the Widgets used.
+
+-------------------------
+
+## 实际使用BP
+
+
+### 获取socket.io的插件后，直接按照教程就可以和web页进行通讯了，整体比较简单
+
+### 想要进行远程控制，尝试模拟远程控制器，球体这边有个关键的概念叫做Torque，是用来控制扭矩的，一直按着会增加扭矩，松开会不变，反方向同样
