@@ -12,3 +12,5 @@ github_username:  tlightsky
 markdown: kramdown
 
 future: true
+
+theme: jekyll-theme-time-machine
